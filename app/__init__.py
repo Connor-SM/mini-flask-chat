@@ -6,8 +6,8 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 app.config.from_object(Config)
-
-socketio = SocketIO(app)
 CORS(app)
+socketio = SocketIO(app)
+
 
 from app import routes
